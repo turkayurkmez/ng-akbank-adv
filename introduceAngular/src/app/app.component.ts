@@ -38,4 +38,9 @@ export class AppComponent {
   getButtonText():string{
     return this.isAllTaskShowing ? "Yapılan görevleri gizle": "Tüm görevleri göster";
   }
+
+  addTask(task:string){
+    let todoItem: TodoItem = new TodoItem(task,false);
+    this.todoItems.push(todoItem);
+  }
 }
