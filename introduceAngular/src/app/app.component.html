@@ -4,3 +4,12 @@
 <ul>
   <li *ngFor="let country of countries">{{country}}</li>
 </ul>
+
+<div>
+  <p>Yapılacak toplam iş: {{ getItemsCount() }}</p>
+  <button (click)="filter()" class="btn" [ngClass]="isAllTaskShowing ? 'btn-warning':'btn-success'">{{getButtonText()}}</button>
+  <div *ngFor="let todo of todoItems">
+    <input type="checkbox" [(ngModel)]="todo.isDone" > {{todo.task}}
+    <span [ngClass]="todo.isDone ? 'green':'red'">{{todo.isDone ? '(yapıldı)':'(yapılmadı)'}}</span>
+  </div>
+</div>
