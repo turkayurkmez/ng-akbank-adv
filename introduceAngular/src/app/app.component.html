@@ -1,15 +1,26 @@
-<h3>{{title}}</h3>
-<p>{{paragraph}} yazısı, {{createdDate}} tarihinde yazıldı</p>
+<div class="container">
+  <h3>{{title}}</h3>
+  <p>{{paragraph}} yazısı, {{createdDate}} tarihinde yazıldı</p>
 
-<ul>
-  <li *ngFor="let country of countries">{{country}}</li>
-</ul>
+  <ul>
+    <li *ngFor="let country of countries">{{country}}</li>
+  </ul>
 
-<div>
-  <p>Yapılacak toplam iş: {{ getItemsCount() }}</p>
-  <button (click)="filter()" class="btn" [ngClass]="isAllTaskShowing ? 'btn-warning':'btn-success'">{{getButtonText()}}</button>
-  <div *ngFor="let todo of todoItems">
-    <input type="checkbox" [(ngModel)]="todo.isDone" > {{todo.task}}
-    <span [ngClass]="todo.isDone ? 'green':'red'">{{todo.isDone ? '(yapıldı)':'(yapılmadı)'}}</span>
+  <div class="row">
+    <div class="col-12">
+      <input type="text" class="form-control" placeholder="Yapılacak iş" #task>
+      <button (click)="addTask(task.value)" class="btn btn-primary">Yeni görev ekle</button>
+    </div>
+  </div>
+
+  <div>
+
+    <p>Yapılacak toplam iş: {{ getItemsCount() }}</p>
+    <button (click)="filter()" class="btn"
+      [ngClass]="isAllTaskShowing ? 'btn-warning':'btn-success'">{{getButtonText()}}</button>
+    <div *ngFor="let todo of todoItems">
+      <input type="checkbox" [(ngModel)]="todo.isDone"> {{todo.task}}
+      <span [ngClass]="todo.isDone ? 'green':'red'">{{todo.isDone ? '(yapıldı)':'(yapılmadı)'}}</span>
+    </div>
   </div>
 </div>
