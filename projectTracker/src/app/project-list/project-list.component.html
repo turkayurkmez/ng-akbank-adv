@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="row m-2" *ngFor="let project of projects">
+    <div class="row m-2" *ngFor="let project of projects | search:''">
         <div class="col-12">
             <app-project [current]="project"></app-project>
         </div>
