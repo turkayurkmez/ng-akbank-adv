@@ -8,6 +8,7 @@ import { DepartmentMenuComponent } from './department-menu/department-menu.compo
 import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectComponent } from './project/project.component';
 import { TaskListComponent } from './task-list/task-list.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TaskListComponent } from './task-list/task-list.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
