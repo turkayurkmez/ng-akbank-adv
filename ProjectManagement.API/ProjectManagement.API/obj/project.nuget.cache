@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+5V+XVyohrkhXAesl2WTT/MwSurUNTFUMNdDoLx72dN/+kq0L71L2rtTMC5o+ovF+2rAsoXC2bJnjvaWsC4Szw==",
+  "dgSpecHash": "ItEXJfXV+yiMd7RBZ4Au0mD70V8wVlgLJk8KG4WXmU1iXk5MgjzPHKveXhgvv7lDYQebMlFu0AGJyzE1xL+7uQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\turka\\source\\repos\\Kurumsal\\akbank\\angular\\ProjectManagement.API\\ProjectManagement.API\\ProjectManagement.API.csproj",
+  "projectFilePath": "C:\\Users\\turka\\source\\repos\\Kurumsal\\akbank\\angularAdv\\ProjectManagement.API\\ProjectManagement.API\\ProjectManagement.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\turka\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\turka\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

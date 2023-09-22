@@ -230,11 +230,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\turka\\source\\repos\\Kurumsal\\akbank\\angular\\ProjectManagement.API\\ProjectManagement.API\\ProjectManagement.API.csproj",
+      "projectUniqueName": "C:\\Users\\turka\\source\\repos\\Kurumsal\\akbank\\angularAdv\\ProjectManagement.API\\ProjectManagement.API\\ProjectManagement.API.csproj",
       "projectName": "ProjectManagement.API",
-      "projectPath": "C:\\Users\\turka\\source\\repos\\Kurumsal\\akbank\\angular\\ProjectManagement.API\\ProjectManagement.API\\ProjectManagement.API.csproj",
+      "projectPath": "C:\\Users\\turka\\source\\repos\\Kurumsal\\akbank\\angularAdv\\ProjectManagement.API\\ProjectManagement.API\\ProjectManagement.API.csproj",
       "packagesPath": "C:\\Users\\turka\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\turka\\source\\repos\\Kurumsal\\akbank\\angular\\ProjectManagement.API\\ProjectManagement.API\\obj\\",
+      "outputPath": "C:\\Users\\turka\\source\\repos\\Kurumsal\\akbank\\angularAdv\\ProjectManagement.API\\ProjectManagement.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
