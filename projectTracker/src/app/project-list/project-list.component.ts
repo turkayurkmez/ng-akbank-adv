@@ -9,5 +9,5 @@ import { projects } from '../models/mocks/project.mock';
 })
 export class ProjectListComponent {
   projects: Project[] = projects
-  
+  searchKey: string;
 }
