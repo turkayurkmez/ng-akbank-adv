@@ -8,7 +8,7 @@ import { DepartmentMenuComponent } from './department-menu/department-menu.compo
 import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectComponent } from './project/project.component';
 import { TaskListComponent } from './task-list/task-list.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchPipe } from './search.pipe';
 import { HttpClientModule } from '@angular/common/http';
 import { AddDepartmentComponent } from './add-department/add-department.component';
@@ -30,7 +30,8 @@ import { AddProjectComponent } from './add-project/add-project.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
