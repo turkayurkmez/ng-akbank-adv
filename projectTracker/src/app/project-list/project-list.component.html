@@ -5,7 +5,7 @@
         </div>        
         
     </div>
-    <div class="row m-2" *ngFor="let project of projects | search:searchKey">
+    <div class="row m-2" *ngFor="let project of projects$ | async | search:searchKey">
         <div class="col-12">
             <app-project [current]="project"></app-project>
         </div>

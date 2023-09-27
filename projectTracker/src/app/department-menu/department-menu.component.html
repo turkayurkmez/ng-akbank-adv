@@ -1,5 +1,5 @@
 <div class="list-group">
-    <a href="#" class="list-group-item" *ngFor="let department of observableDepartments$ | async ">
+    <a routerLink="projeler/departman/{{department.id}}" class="list-group-item" *ngFor="let department of observableDepartments$ | async ">
         {{department.name}}
     </a>
 </div>
