@@ -1,1 +1,11 @@
-<p>add-department works!</p>
+<form #newDepartment="ngForm" (ngSubmit)="submitForm(newDepartment)">
+    <div class="form-group">
+        <label for="name">Departman Adı</label>
+        <input #depName="ngModel" name="name" id="name" type="text" class="form-control" required minlength="3" [(ngModel)]="department.name">
+        <br>
+        <span class="alert alert-danger" *ngIf="depName.getError('required') && (depName.dirty)">Departman adı boş olamaz!</span>
+        <span class="alert alert-danger" *ngIf="depName.getError('minlength') && depName.dirty">Departman adı en az 3 harf</span>
+
+    </div>
+    <button class="btn btn-success">Yeni Departman Ekle</button>
+</form>
