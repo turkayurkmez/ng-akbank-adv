@@ -16,7 +16,7 @@ export class DepartmentService {
     return this.httpClient.get<Department[]>(this.url)
                           .pipe(catchError((err:HttpErrorResponse)=>{
                             console.log(err.message);
-                            return throwError(()=>new Error(err.statusText));
+                            return throwError(()=>new Error(err.statusText))
                           }));
   }
 }
