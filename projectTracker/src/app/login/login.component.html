@@ -1,0 +1,5 @@
+<h3>Giriş Yapın</h3>
+<div><input type="text" class="form-control" placeholder="Kullanıcı adı" #userName>
+    <input type="password" class="form-control" placeholder="Şifre" #pass>
+    <button class="btn btn-success" (click)="login(userName.value, pass.value)">Giriş</button>
+</div>
