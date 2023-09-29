@@ -3,7 +3,9 @@ import { BookService } from "src/app/services/book.service";
 import  * as fromBooks  from "./index";
 import { map, switchMap } from "rxjs";
 import { IBook } from "src/app/interfaces/ibook.interface";
+import { Injectable } from "@angular/core";
 
+@Injectable()
 export class BooksEffects{
     constructor(private readonly actions$: Actions,
                 private readonly bookService: BookService){
